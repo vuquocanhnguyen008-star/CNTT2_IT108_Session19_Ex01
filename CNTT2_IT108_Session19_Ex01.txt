@@ -1,0 +1,10 @@
+*Bài 1: Vá lỗ hổng rò rỉ API Key trên GitHub
+**1. Tại sao tệp .env bị đẩy lên GitHub?**
+- Do lúc đầu tạo tệp `.gitignore` chưa khai báo tên tệp `.env` vào trong đó, nên Git tưởng nó là tệp code bình thường và đẩy (push) lên kho lưu trữ luôn.
+
+**2. Nội dung tệp .gitignore đúng và cách ẩn thông tin trên VS Code:**
+- Nội dung tệp `.gitignore`:
+  ```text
+  node_modules/
+  dist/
+  .env
